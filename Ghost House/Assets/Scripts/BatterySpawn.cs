@@ -58,5 +58,12 @@ public class BatterySpawn : MonoBehaviour {
 		
 	}
 
+		public void BatteryPickup(){
+		
+			print("Spawner is Empty");
+			batSpawned = false;			
+		}
+	}
 
-}
+
+
