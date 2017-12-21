@@ -6,6 +6,7 @@ public class GhostStun : MonoBehaviour {
 	bool lightCheck;
 	FlashLight flash;
 	public GameObject ghost;
+	public float stunDelay; 
 	
 		
 	// Use this for initialization
@@ -35,7 +36,7 @@ public class GhostStun : MonoBehaviour {
 			//  other.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 
 			other.GetComponent<GhostAI>().moveSpeed = 0f;
-			StartCoroutine(Wait(5, other));
+			StartCoroutine(Wait(stunDelay, other));
 			// StopCoroutine(Wait(5));
 			
 		}
